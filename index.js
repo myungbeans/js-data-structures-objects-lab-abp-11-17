@@ -14,3 +14,8 @@ function deleteFromDriverByKey (obj, key, value) {
   newObj[key] = value
   return newObj
 }
+
+function destructivelyDeleteFromDriverByKey (obj, key, value) {
+  obj[key] = value
+  return obj
+}
